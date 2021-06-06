@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">TipsCalculate</string>
+    <string name="app_name">Calculadora de Gorjetas</string>
+    <string name="TextView_Entrada_De_Valor">Digite o valor total de serviçoes e produtos</string>
+    <string name="TextView_Porcentagem_Inicial_Seekbar">0%</string>
+    <string name="TextView_Gorjeta">Gorjeta</string>
+    <string name="TextView">Valor Total</string>
+    <string name="TextView_Texto_Inicial_Gorjeta" />
+    <string name="TextView_Texto_Inicial_Valor_Final" />
+    <string name="TextView_Valor_Final_Inicial">R$ 0.00</string>
+    <string name="TextView_Assinatura">Created By Lucas Pires</string>
 </resources>
