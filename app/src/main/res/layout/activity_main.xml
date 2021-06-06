@@ -29,7 +29,8 @@
             android:id="@+id/TextinputEntradaDeValorTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/TextView_Entrada_De_Valor" />
+            android:hint="@string/TextView_Entrada_De_Valor"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
