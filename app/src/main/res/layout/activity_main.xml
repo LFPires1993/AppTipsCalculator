@@ -26,13 +26,14 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextinputEntradaDeValorTotal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/TextView_Entrada_De_Valor" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewPorcentagem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -42,14 +43,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/seekBarGorjeta"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textViewPorcentagem"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <TextView
@@ -60,7 +61,7 @@
         android:text="@string/TextView_Gorjeta"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewPorcentagem" />
 
     <TextView
         android:id="@+id/textView3"
@@ -80,7 +81,7 @@
         app:layout_constraintGuide_begin="118dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewFinalGorjeta"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorCaixaDeValores"
@@ -91,7 +92,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewFinalPreco"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorCaixaDeValores"
@@ -108,5 +109,5 @@
         android:layout_marginTop="32dp"
         android:text="@string/TextView_Assinatura"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewFinalPreco" />
 </androidx.constraintlayout.widget.ConstraintLayout>
