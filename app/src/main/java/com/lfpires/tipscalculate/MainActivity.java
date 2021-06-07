@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         textViewFinalGorjeta         = findViewById(R.id.textViewFinalGorjeta);
         textViewFinalPreco           = findViewById(R.id.textViewFinalPreco);
 
-        seekBarGorjeta.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarGorjeta.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() { // Interação com layout
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 porcentagem = progress;
@@ -50,12 +50,12 @@ public class MainActivity extends AppCompatActivity {
     private void calcular(){
         String valor = TextinputEntradaDeValorTotal.getText().toString();
 
-        if (valor == null || valor.equals("")){
+        if (valor == null || valor.equals("")){ // Validação
             Toast.makeText(
                     getApplicationContext(),
                     "Digite um valor!",
                     Toast.LENGTH_LONG);
-        } else {
+        } else { // Calculo
             double valorDigitado = Double.parseDouble(valor);
             double valorGorjeta  = valorDigitado * this.porcentagem / 100;
 
